@@ -1,0 +1,39 @@
+<?php
+/**
+ * @var Model_User $user
+ */
+$users = $view->getParam('user');
+
+?>
+
+<?php if($users) : ?>
+    <p><h1>Orders</h1></p>
+    <p><input type="submit" class="global_actions" name="add_user" value="Add new user" /></p>
+    <table border="2px">
+        <th>Id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Actions</th>
+
+        <?php foreach ($users as $user)
+        { ?>
+
+            <tr>
+                <td><?php echo $user->id; ?></td>
+                <td><?php echo $user->first_name; ?></td>
+                <td><?php echo $user->last_name; ?></td>
+                <td><?php echo $user->email; ?></td>
+                <td> <input type="submit" name="edit" value="Edit" />
+                    <input type="submit" name="delete" value="Delete" />
+                </td>
+
+            </tr>
+
+        <?php } ?>
+
+    </table>
+
+<?php  elseif($view->getParam('error')) : ?>
+    <div class="error"><?php echo $view->getParam('error')?></div>
+<?php endif; ?>

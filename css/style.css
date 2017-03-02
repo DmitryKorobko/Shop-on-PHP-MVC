@@ -22,3 +22,14 @@
 .hide {
     display: none;
 }
+.global_actions {
+    height: 50px;
+    width:150px;
+    font-size: 20;
+}
+body{
+    background-color: lightgoldenrodyellow;
+}
+table {
+    background-color: blanchedalmond;
+}

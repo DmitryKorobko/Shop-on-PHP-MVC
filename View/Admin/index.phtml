@@ -1,30 +1,8 @@
-<?php
-/**
- * @var Model_User $user
- */
-$users = $view->getParam('user');
-
-?>
-
-<?php if($users) : ?>
+<p><h1>Admin path</h1></p>
 <table border="2px">
-    <th>Id</th>
-    <th>Name</th>
-    <th>Email</th>
-
-        <?php foreach ($users as $user)
-        { ?>
-
     <tr>
-        <td><?php echo $user->id; ?></td>
-        <td><?php echo $user->name; ?></td>
-        <td><?php echo $user->email; ?></td>
+        <td><input type="submit" class="global_actions" name="users" value="Users" onclick="javascript:window.location='/admin/users'"/></td>
+        <td><input type="submit" class="global_actions" name="products" value="Products" onclick="javascript:window.location='/admin/products'"/></td>
+        <td><input type="submit" class="global_actions" name="orders" value="Orders" onclick="javascript:window.location='/admin/orders'"/></td>
     </tr>
-
-       <?php } ?>
-
 </table>
-
-<?php  elseif($view->getParam('error')) : ?>
-    <div class="error"><?php echo $view->getParam('error')?></div>
-<?php endif; ?>

@@ -11,13 +11,10 @@ class Model_Db_Table_User extends System_Db_Table
      */
     public function getById($id)
     {
-        $sql    = 'select * from ' . $this->getName() . ' where id = ?';
-        
+        $sql = 'select * from ' . $this->getName() . ' where id = ?';
         $sth = $this->getConnection()->prepare($sql);
         $sth->execute([$id]);
-        
         $result = $sth->fetchAll(PDO::FETCH_OBJ);
-        
         return $result;
     }
     
@@ -33,9 +30,7 @@ class Model_Db_Table_User extends System_Db_Table
         $password   = trim($params['password']);
         $sql = 'INSERT INTO ' . $this->getName() . ' (email,password) VALUES(?,?)';
         $sth = $this->getConnection()->prepare($sql);
-        
         $result = $sth->execute([$login, sha1($password)]);
-        
         if($result) {
             return $this->getConnection()->lastInsertId();
         }
@@ -53,9 +48,7 @@ class Model_Db_Table_User extends System_Db_Table
         $password   = trim($params['password']);
         
         $requestParams = [$login];
-        
         $sql = 'select * from ' . $this->getName() . ' where email = ?';
-        
         if($mode == Model_User::MODE_LOGIN) {
             $sql .= ' AND password = ?';
             array_push($requestParams, sha1($password));
@@ -74,13 +67,18 @@ class Model_Db_Table_User extends System_Db_Table
 
     public function getAllUsers()
     {
-        $sql    = 'select * from ' . $this->getName();
-
+        $sql = 'select * from ' . $this->getName();
         $sth = $this->getConnection()->prepare($sql);
         $sth->execute();
-
         $result = $sth->fetchAll(PDO::FETCH_OBJ);
-
+        return $result;
+    }
+    public function deleteUser($id)
+    {
+        $sql = 'delete * from ' . $this->getName() . ' where id = ?';
+        $sth = $this->getConnection()->prepare($sql);
+        $sth->execute([$id]);
+        $result = $sth->fetchAll(PDO::FETCH_OBJ);
         return $result;
     }
 }

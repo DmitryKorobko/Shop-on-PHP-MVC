@@ -160,10 +160,18 @@ class Model_User
         return true;
     }
 
-    public static function getAllUsers() {
-        $dbUsers     =  new Model_Db_Table_User();
-        $dbUsers   =  $dbUsers->getAllUsers();
+    public static function getAllUsers()
+    {
+        $dbUsers = new Model_Db_Table_User();
+        $dbUsers = $dbUsers->getAllUsers();
         return $dbUsers;
 
+    }
+
+    public function deleteUser()
+    {
+        $dbUsers = new Model_Db_Table_User();
+        $dbUsers = $dbUsers->deleteUser();
+        return $dbUsers;
     }
 }

@@ -22,7 +22,7 @@
     <body>  
         <div id="error"><?php //echo !empty($errorMessage) ? $errorMessage : ''; ?></div>
 
-        <div id="userEmail"><?php echo !empty($userId) ? 'Вы зашли как: ' : '';?><a href="<?php echo !empty($userId)? '/user/profile/id/'.$userId : '';?>"><?php echo !empty($userEmail) ? $userEmail : ''; ?></a></div>
+        <div id="userEmail"><?php echo !empty($userId) ? 'You sign in as: ' : '';?><a href="<?php echo !empty($userId)? '/user/profile/id/'.$userId : '';?>"><?php echo !empty($userEmail) ? $userEmail : ''; ?></a></div>
         <div id="userId"><a id="logout" href="#"><?php echo !empty($userId) ? 'Exit' : ''?></a></div>
 
         <div id="loginFormDiv" <?php if(!empty($userId)) { echo 'class = "hide"'; } ?> >
@@ -35,13 +35,13 @@
             </form>
         </div>
            <div id="menu">
-                <a href="/">Главная </a> &nbsp&nbsp | &nbsp&nbsp
-                <a href="/product/index">Продукты </a>  &nbsp&nbsp | &nbsp&nbsp
-                <a href="/company/portfolio">Портфолио </a>  &nbsp&nbsp | &nbsp&nbsp
-                <a href="/company/about">О компании </a>  &nbsp&nbsp | &nbsp&nbsp
-                <a href="/company/contact">Контакты </a>  &nbsp&nbsp | &nbsp&nbsp
+                <a href="/">Main page </a> &nbsp&nbsp | &nbsp&nbsp
+                <a href="/product/index">Products </a>  &nbsp&nbsp | &nbsp&nbsp
+                <a href="/company/portfolio">Portfolio </a>  &nbsp&nbsp | &nbsp&nbsp
+                <a href="/company/about">About company </a>  &nbsp&nbsp | &nbsp&nbsp
+                <a href="/company/contact">Contacts </a>  &nbsp&nbsp | &nbsp&nbsp
                 <?php //if ($userRoleId == Model_User::ROLE_ADMIN) : ?>
-                    <a id="admin_href" href="/admin/index" <?php if($userRoleId != Model_User::ROLE_ADMIN) { echo 'class="hide"'; } ?>>Админка </a>  &nbsp&nbsp
+                    <a id="admin_href" href="/admin/index" <?php if($userRoleId != Model_User::ROLE_ADMIN) { echo 'class="hide"'; } ?>>Admin path </a>  &nbsp&nbsp
                 <?php //endif; ?>
             </div>
         <br />
@@ -56,8 +56,8 @@
     ?>
         
     <hr />    
-    <div>Здесь может быть ваша реклама</div>    
-    
+    <div>Your advertising may be here</div>
+
     </body>
     
 </html>
