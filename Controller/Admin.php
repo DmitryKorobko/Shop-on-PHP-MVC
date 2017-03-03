@@ -26,7 +26,13 @@ class Controller_Admin extends System_Controller
     }
     public function deleteUserAction()
     {
-        $user = Model_User::deleteUser();
+        $id = $this->args[0];
+        $user = new Model_User;
+        $user->deleteUser($id);
+    }
+    public function addingUserAction()
+    {
+
     }
 
 }

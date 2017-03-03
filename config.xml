@@ -3,7 +3,7 @@
     <db>
         <host>127.0.0.1</host>
         <dbname>shop2</dbname>
-        <username>root</username>
-        <password></password>
+        <username>shop2user</username>
+        <password>shop2user</password>
     </db>
 </settings>

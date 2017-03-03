@@ -16,7 +16,7 @@ $(document).ready(function() {
                     $('#error').html(data.error);
                 }
                 else {
-                    $('#userEmail').html('Вы зашли как: ' + '<a href="/user/profile/id/'+ data.id + '">' + data.email + '</a>');
+                    $('#userEmail').html('You sign in as: ' + '<a href="/user/profile/id/'+ data.id + '">' + data.email + '</a>');
                     $('#userId').html('<a id="logout" href="#">Exit</a>');
                     $('#loginFormDiv').hide();
                     $('#error').empty();
@@ -40,7 +40,7 @@ $(document).ready(function() {
                     $('#error').html(data.error);
                 }
                 else {
-                    $('#userEmail').html('Вы зашли как: ' + '<a href="/user/profile/id/'+ data.id + '">' + data.email + '</a>');
+                    $('#userEmail').html('You sign in as: ' + '<a href="/user/profile/id/'+ data.id + '">' + data.email + '</a>');
                     $('#userId').html('<a id="logout" href="#">Exit</a>');
                     $('#loginFormDiv').hide();
                     $('#error').empty();

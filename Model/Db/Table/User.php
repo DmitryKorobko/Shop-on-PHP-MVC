@@ -75,7 +75,7 @@ class Model_Db_Table_User extends System_Db_Table
     }
     public function deleteUser($id)
     {
-        $sql = 'delete * from ' . $this->getName() . ' where id = ?';
+        $sql = 'delete from ' . $this->getName() . ' where id = ?';
         $sth = $this->getConnection()->prepare($sql);
         $sth->execute([$id]);
         $result = $sth->fetchAll(PDO::FETCH_OBJ);

@@ -168,10 +168,10 @@ class Model_User
 
     }
 
-    public function deleteUser()
+    public function deleteUser($id)
     {
         $dbUsers = new Model_Db_Table_User();
-        $dbUsers = $dbUsers->deleteUser();
+        $dbUsers = $dbUsers->deleteUser($id);
         return $dbUsers;
     }
 }

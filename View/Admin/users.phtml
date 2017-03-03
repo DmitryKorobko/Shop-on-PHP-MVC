@@ -7,8 +7,8 @@ $users = $view->getParam('user');
 ?>
 
 <?php if($users) : ?>
-    <p><h1>Orders</h1></p>
-    <p><input type="submit" class="global_actions" name="add_user" value="Add new user" /></p>
+    <p><h1>Users</h1></p>
+    <p><input type="submit" class="global_actions" name="add_user" value="Add new user" onclick="javascript:window.location='/admin/addinguser'"/></p>
     <table border="2px">
         <th>Id</th>
         <th>First name</th>
@@ -25,7 +25,7 @@ $users = $view->getParam('user');
                 <td><?php echo $user->last_name; ?></td>
                 <td><?php echo $user->email; ?></td>
                 <td> <input type="submit" name="edit" value="Edit" />
-                    <input type="submit" name="delete" value="Delete" />
+                    <input type="submit" name="delete" value="Delete" onclick="javascript: deleting(<?php echo $user->id; ?>);"/>
                 </td>
 
             </tr>
