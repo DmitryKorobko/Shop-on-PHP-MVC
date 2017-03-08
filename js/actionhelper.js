@@ -9,5 +9,8 @@ function deleting(user_id)
 
 function adding()
 {
-
+    alert('User is added!');
+    window.location='/admin/users';
+    return true;
 }
+

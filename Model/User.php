@@ -174,4 +174,11 @@ class Model_User
         $dbUsers = $dbUsers->deleteUser($id);
         return $dbUsers;
     }
+
+    public function addingUser($params)
+    {
+        $dbUsers = new Model_Db_Table_User();
+        $dbUsers = $dbUsers->addingUser($params);
+        return $dbUsers;
+    }
 }

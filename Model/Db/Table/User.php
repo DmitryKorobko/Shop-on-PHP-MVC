@@ -81,4 +81,25 @@ class Model_Db_Table_User extends System_Db_Table
         $result = $sth->fetchAll(PDO::FETCH_OBJ);
         return $result;
     }
+    /**
+     * @param array $params
+     * @return int
+     */
+    public function addingUser($params)
+    {
+        $login      = trim($params['email']);
+        $password   = trim($params['password']);
+        $first_name = trim($params['first_name']);
+        $last_name  = trim($params['last_name']);
+        $birth      = trim($params['birth']);
+        $skills     = trim($params['skills']);
+        $photo      = trim($params['photo']);
+        $role_id    = trim($params['role_id']);
+        $sql = 'INSERT INTO ' . $this->getName() . ' (email,password,first_name,last_name,birth,skills,photo,role_id) VALUES(?,?,?,?,?,?,?,?)';
+        $sth = $this->getConnection()->prepare($sql);
+        $result = $sth->execute([$login, sha1($password),$first_name,$last_name,$birth,$skills,$photo,$role_id]);
+        if($result) {
+            return $this->getConnection()->lastInsertId();
+        }
+    }
 }

@@ -1,0 +1,33 @@
+<p><h1>Adding new user</h1></p>
+
+<form name="main" action="/admin/addinguser/" method="post">
+    E-mail:<br>
+    <input type="text" name="email" size="15" maxlength="30"><br>
+    Password:<br>
+    <input type="password" name="password" size="15" maxlength="30"><br>
+    First name:<br>
+    <input type="text" name="first_name" size="15" maxlength="20"><br>
+    Last name:<br>
+    <input type="text" name="last_name" size="15" maxlength="20"><br>
+    Year of Birth:<br>
+    <input type="date" name="birth" size="15" maxlength="20"><br>
+    Skills (please, selected with "Ctrl"):<br>
+    <select name="skills[]" size="6" multiple>
+        <option value="php"> PHP </option>
+        <option value="css"> CSS </option>
+        <option value="javascript"> Javascript </option>
+        <option value="java"> Java </option>
+        <option value="html"> HTML</option>
+        <option value="web_design"> Web-design </option>
+    </select><br>
+    Photo:<br>
+    <input type="image" name="photo" value="Upload photo" size="15" maxlength="20"><br>
+    Role ID:<br>
+    <select name="role_id">
+        <option value="2">User</option>
+        <option value="5">Admin</option>
+    </select><br>
+    <p><input type="submit" class="global_actions" value="Add this user" onclick="adding();"/></p>
+</form>
+
+

@@ -67,7 +67,9 @@ $(document).ready(function() {
                 $('#loginFormDiv').show();
                 $('#userEmail').empty();
                 $('#admin_href').attr('class', 'hide');
+                window.location.reload();
             }
         ); 
     });
+
 });
