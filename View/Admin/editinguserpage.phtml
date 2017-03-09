@@ -1,0 +1,51 @@
+<?php
+$userId = array_pop(explode('/', $_GET['route']));
+
+$userRoleId = 0;
+if($userId) {
+    $userModel      = Model_User::getById($userId);
+    $userEmail      = $userModel->email;
+//    $userPassword   = $userModel->getPassword();
+    $userFirstName  = $userModel->first_name;
+    $userLastName   = $userModel->last_name;
+    $userBirth      = $userModel->birth;
+    $userSkills     = $userModel->skills;
+    $userRoleId     = $userModel->role_id;
+}
+?>
+<p><h1>Edit this user</h1></p>
+<form name="main" action="/admin/editinguser/" method="post">
+    E-mail:<br>
+    <input type="text" name="email" value="<?php echo $userEmail; ?>" size="15" maxlength="30"><br>
+<!--    Password:<br>-->
+<!--    <input type="password" name="password" value="--><?php //echo $userPassword; ?><!--" size="15" maxlength="30"><br>-->
+    First name:<br>
+    <input type="text" name="first_name" value="<?php echo $userFirstName; ?>" size="15" maxlength="20"><br>
+    Last name:<br>
+    <input type="text" name="last_name" value="<?php echo $userLastName; ?>" size="15" maxlength="20"><br>
+    Year of Birth:<br>
+    <input type="text" name="birth" value="<?php echo $userBirth; ?>" size="15" maxlength="20"><br>
+    Skills (please, selected with "Ctrl"):<br>
+    <select name="skills[]" size="6" multiple>
+        <option value="php"> PHP </option>
+        <option value="css"> CSS </option>
+        <option value="javascript"> Javascript </option>
+        <option value="java"> Java </option>
+        <option value="html"> HTML</option>
+        <option value="web-design"> Web-design </option>
+    </select><br>
+    Photo:<br>
+    <input type="image" name="photo" value="Upload photo" size="15" maxlength="20"><br>
+    Role ID:<br>
+    <select name="role_id">
+        <option value="2">User</option>
+        <option value="5">Admin</option>
+    </select><br>
+    <input type="hidden" name="user_id" value="<?php echo $userId; ?>"/>
+    <p><input type="submit" class="global_actions" value="Save editing" onclick="editing();"/></p>
+</form>
+<script>
+    searchSkills('<?php echo $userSkills; ?>');
+    searchRoleId('<?php echo $userRoleId; ?>');
+</script>
+

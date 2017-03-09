@@ -31,12 +31,33 @@ class Model_User
      * @var string
      */
     public $name;
-    
+
+    /**
+     * @var string
+     */
+    public $first_name;
+
+    /**
+     * @var string
+     */
+    public $skills;
+
+    /**
+     * @var string
+     */
+    public $last_name;
+
     /**
      *
      * @var string 
      */
     public  $email;
+
+    /**
+     *
+     * @var int
+     */
+    public  $birth;
     
     /**
      *
@@ -71,8 +92,12 @@ class Model_User
             $modelUser  = new self();
             $modelUser->id          = $userData->id;
             $modelUser->name        = $userData->first_name . ' ' . $userData->last_name;
+            $modelUser->first_name  = $userData->first_name;
+            $modelUser->last_name   = $userData->last_name;
             $modelUser->email       = $userData->email;
+            $modelUser->birth       = $userData->birth;
             $modelUser->photo       = $userData->photo;
+            $modelUser->skills      = $userData->skills;
             $modelUser->role_id     = $userData->role_id;
 
             return $modelUser;
@@ -135,7 +160,15 @@ class Model_User
             throw new Exception('Invalid user or password.', System_Exception::INVALID_LOGIN);
         }
     }
-    
+
+   /**
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->_password;
+    }
+
     /**
      * 
      * @param array $params
@@ -179,6 +212,13 @@ class Model_User
     {
         $dbUsers = new Model_Db_Table_User();
         $dbUsers = $dbUsers->addingUser($params);
+        return $dbUsers;
+    }
+
+    public function editingUser($params)
+    {
+        $dbUsers = new Model_Db_Table_User();
+        $dbUsers = $dbUsers->editingUser($params);
         return $dbUsers;
     }
 }

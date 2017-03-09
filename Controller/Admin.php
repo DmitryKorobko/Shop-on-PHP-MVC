@@ -70,9 +70,29 @@ class Controller_Admin extends System_Controller
     {
         if($this->isAdmin()) {
             $params = $_POST;
-            $params['skills'] = implode(",", $_POST['skills']);
             $user = new Model_User;
             $user = $user->addingUser($params);
+            header('location: /admin/users/');
+            return $user;
+        }
+        else {
+            header('location: /');
+        }
+    }
+
+    public function editingUserPageAction()
+    {
+        if (!($this->isAdmin())) {
+            header('location: /');
+        }
+    }
+
+    public function editingUserAction()
+    {
+        if($this->isAdmin()) {
+            $params = $_POST;
+            $user = new Model_User;
+            $user = $user->editingUser($params);
             header('location: /admin/users/');
             return $user;
         }
