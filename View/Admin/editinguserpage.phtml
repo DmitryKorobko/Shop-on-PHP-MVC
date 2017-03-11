@@ -42,7 +42,7 @@ if($userId) {
         <option value="5">Admin</option>
     </select><br>
     <input type="hidden" name="user_id" value="<?php echo $userId; ?>"/>
-    <p><input type="submit" class="global_actions" value="Save editing" onclick="editing();"/></p>
+    <p><input type="submit" class="global_actions" value="Save editing" onclick="editingUser();"/></p>
 </form>
 <script>
     searchSkills('<?php echo $userSkills; ?>');

@@ -32,7 +32,11 @@ class Controller_Admin extends System_Controller
 
     public function ordersAction()
     {
-        if (!($this->isAdmin())) {
+        $order = Model_Order::getAllOrders();
+        if($this->isAdmin()) {
+            $this->view->setParam('order', $order);
+        }
+        else {
             header('location: /');
         }
     }
@@ -95,6 +99,61 @@ class Controller_Admin extends System_Controller
             $user = $user->editingUser($params);
             header('location: /admin/users/');
             return $user;
+        }
+        else {
+            header('location: /');
+        }
+    }
+
+    public function deleteOrderAction()
+    {
+        if($this->isAdmin()) {
+            $id = $this->args[0];
+            $order = new Model_Order;
+            $order->deleteOrder($id);
+
+        }
+        else {
+            header('location: /');
+        }
+    }
+
+    public function addingOrderPageAction()
+    {
+        if (!($this->isAdmin())) {
+            header('location: /');
+        }
+    }
+
+    public function addingOrderAction()
+    {
+        if($this->isAdmin()) {
+            $params = $_POST;
+            $order = new Model_Order;
+            $order = $order->addingOrder($params);
+            header('location: /admin/orders/');
+            return $order;
+        }
+        else {
+            header('location: /');
+        }
+    }
+
+    public function editingOrderPageAction()
+    {
+        if (!($this->isAdmin())) {
+            header('location: /');
+        }
+    }
+
+    public function editingOrderAction()
+    {
+        if($this->isAdmin()) {
+            $params = $_POST;
+            $order = new Model_Order;
+            $order = $order->editingOrder($params);
+            header('location: /admin/orders/');
+            return $order;
         }
         else {
             header('location: /');

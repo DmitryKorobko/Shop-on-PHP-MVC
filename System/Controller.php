@@ -12,6 +12,12 @@ abstract class System_Controller
      * @var int 
      */
     protected $_userId;
+
+    /**
+     *
+     * @var int
+     */
+    protected $_orderId;
     
     /**
      *
@@ -98,6 +104,15 @@ abstract class System_Controller
     public function getUserId()
     {
         return $this->_userId;
+    }
+
+    /**
+     *
+     * @return int
+     */
+    public function getOrderId()
+    {
+        return $this->_orderId;
     }
 
     /**

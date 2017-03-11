@@ -1,4 +1,4 @@
-function deleting(user_id)
+function deletingUser(user_id)
 {
     if (confirm("Are you sure?"))
     {
@@ -8,17 +8,41 @@ function deleting(user_id)
     }
 }
 
-function adding()
+function addingUser()
 {
     alert('User is added!');
     window.location='/admin/users';
     return true;
 }
 
-function editing()
+function editingUser()
 {
     alert('Editing for this user is saving!');
     window.location='/admin/users';
+    return true;
+}
+
+function deletingOrder(order_id)
+{
+    if (confirm("Are you sure?"))
+    {
+        window.location = '/admin/deleteorder/' + order_id;
+        window.location = '/admin/orders';
+        return true;
+    }
+}
+
+function addingOrder()
+{
+    alert('Order is added!');
+    window.location='/admin/orders';
+    return true;
+}
+
+function editingOrder()
+{
+    alert('Editing for this order is saving!');
+    window.location='/admin/orders';
     return true;
 }
 
@@ -40,3 +64,13 @@ function searchRoleId(role)
 {
     $("select option[value=" + role + "]").prop("selected", true);
 }
+
+// function viewElements(class, element)
+// {
+//      $('.' + class).attr('hidden',true);
+//     var elements = element.split(',');
+//     elements.forEach(function(item) {
+//         $('.' + item).prop('hidden',false);
+//         alert(item);
+//     });
+// }

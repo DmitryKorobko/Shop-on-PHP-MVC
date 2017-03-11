@@ -1,0 +1,22 @@
+<?php
+$orderId = array_pop(explode('/', $_GET['route']));
+
+if($orderId) {
+    $orderModel     = Model_Order::getById($orderId);
+    $orderId        = $orderModel->id;
+    $orderUserId    = $orderModel->order_user_id;
+    $orderDate      = $orderModel->order_date;
+    $orderSum       = $orderModel->order_sum;
+}
+?>
+<p><h1>Edit this order</h1></p>
+<form name="main" action="/admin/editingorder/" method="post">
+    User ID:<br>
+    <input type="int" name="order_user_id" value="<?php echo $orderUserId; ?>" size="15" maxlength="20"><br>
+    Date:<br>
+    <input type="date" name="order_date" value="<?php echo $orderDate; ?>" size="15" maxlength="20"><br>
+    Sum:<br>
+    <input type="text" name="order_sum" value="<?php echo $orderSum; ?>" size="15" maxlength="20"><br>
+    <input type="hidden" name="order_id" value="<?php echo $orderId; ?>"/>
+    <p><input type="submit" class="global_actions" value="Save editing" onclick="editingOrder();"/></p>
+</form>

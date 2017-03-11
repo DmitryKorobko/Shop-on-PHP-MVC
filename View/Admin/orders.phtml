@@ -1,1 +1,36 @@
-<p><h1>Orders</h1></p>
+<?php
+/**
+ * @var Model_Order $order
+ */
+$orders = $view->getParam('order');
+
+?>
+
+<?php if($orders) : ?>
+    <p><h1>Orders</h1></p>
+    <p><input type="submit" class="global_actions" name="add_order" value="Add order" onclick="javascript:window.location='/admin/addingorderpage';"/></p>
+
+    <table border="2px">
+        <th class="orders order_id">Order Id</th>
+        <th class="orders order_user_id">User Id</th>
+        <th class="orders order_date">Date</th>
+        <th class="orders order_sum">Sum of order</th>
+        <th>Actions</th>
+
+        <?php foreach ($orders as $order)
+        { ?>
+            <tr>
+                <td class="orders order_id"><?php echo $order->id; ?></td>
+                <td class="orders order_user_id"><?php echo $order->order_user_id; ?></td>
+                <td class="orders order_date"><?php echo $order->order_date; ?></td>
+                <td class="orders order_sum"><?php echo $order->order_sum; ?></td>
+                <td> <input type="submit" name="edit_order" value="Edit" onclick="javascript:window.location='/admin/editingorderpage/<?php echo $order->id; ?>';"/>
+                    <input type="submit" name="delete_order" value="Delete" onclick="javascript: deletingOrder(<?php echo $order->id; ?>);"/>
+                </td>
+            </tr>
+        <?php } ?>
+    </table>
+
+<?php  elseif($view->getParam('error')) : ?>
+    <div class="error"><?php echo $view->getParam('error')?></div>
+<?php endif; ?>

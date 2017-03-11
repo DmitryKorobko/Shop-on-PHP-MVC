@@ -1,0 +1,14 @@
+<p><h1>Adding new order</h1></p>
+
+<form name="main" action="/admin/addingorder/" method="post">
+    User ID:<br>
+    <input type="int" name="order_user_id" size="15" maxlength="30"><br>
+    Date:<br>
+    <input type="date" name="order_date" size="15" maxlength="30"><br>
+    Sum of order:<br>
+    <input type="text" name="order_sum" size="15" maxlength="20"><br>
+
+    <p><input type="submit" class="global_actions" value="Add this order" onclick="addingOrder();"/></p>
+</form>
+
+
