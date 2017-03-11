@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="922a7031-2c78-478a-b980-457e726c4400" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controller/Order.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Db/Table/Order.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Order.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Admin/addingorderpage.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Admin/editingorderpage.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Db/Table/Product.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Product.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Admin/addingproductpage.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/View/Admin/editingproductpage.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Admin.php" afterPath="$PROJECT_DIR$/Controller/Admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Product.php" afterPath="$PROJECT_DIR$/Controller/Product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/Db/Table/Order.php" afterPath="$PROJECT_DIR$/Model/Db/Table/Order.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/System/Controller.php" afterPath="$PROJECT_DIR$/System/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Admin/addinguserpage.phtml" afterPath="$PROJECT_DIR$/View/Admin/addinguserpage.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Admin/editinguserpage.phtml" afterPath="$PROJECT_DIR$/View/Admin/editinguserpage.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Admin/orders.phtml" afterPath="$PROJECT_DIR$/View/Admin/orders.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Admin/users.phtml" afterPath="$PROJECT_DIR$/View/Admin/users.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Admin/addingorderpage.phtml" afterPath="$PROJECT_DIR$/View/Admin/addingorderpage.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Admin/editingorderpage.phtml" afterPath="$PROJECT_DIR$/View/Admin/editingorderpage.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Admin/products.phtml" afterPath="$PROJECT_DIR$/View/Admin/products.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/actionhelper.js" afterPath="$PROJECT_DIR$/js/actionhelper.js" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -32,52 +32,12 @@
     <favorites_list name="steinmann.com" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="orders.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Admin/orders.phtml">
+    <leaf>
+      <file leaf-file-name="editingproductpage.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/Admin/editingproductpage.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editingorderpage.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Admin/editingorderpage.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editinguserpage.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Admin/editinguserpage.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addinguserpage.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Admin/addinguserpage.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.phtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/View/Admin/users.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="45" column="104" selection-start-line="45" selection-start-column="104" selection-end-line="45" selection-end-column="104" />
+            <state relative-caret-position="288">
+              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -86,8 +46,48 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1252">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="391">
+              <caret line="211" column="42" selection-start-line="211" selection-start-column="42" selection-end-line="211" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Model/Db/Table/Product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-721">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <marker date="1489259866983" expanded="true" signature="221:273" ph="select * fro... ${$this-&gt;getName()}" />
+                <marker date="1489259866983" expanded="true" signature="501:515" ph="select * fro... ${$this-&gt;getName()}" />
+                <marker date="1489259866983" expanded="true" signature="759:809" ph="delete from " />
+                <marker date="1489259866983" expanded="true" signature="1320:1420" ph="INSERT INTO ${$this-&gt;getName()}... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/Db/Table/Order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+              <folding>
+                <marker date="1489257975606" expanded="true" signature="216:267" ph="select * fro... ${$this-&gt;getName()}" />
+                <marker date="1489257975606" expanded="true" signature="492:506" ph="select * fro... ${$this-&gt;getName()}" />
+                <marker date="1489257975606" expanded="true" signature="747:796" ph="delete from " />
+                <marker date="1489257975606" expanded="true" signature="1251:1338" ph="INSERT INTO ${$this-&gt;getName()}... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editingorderpage.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/Admin/editingorderpage.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,43 +96,8 @@
       <file leaf-file-name="actionhelper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/actionhelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-739">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/Db/Table/Order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <marker date="1489232506858" expanded="true" signature="216:267" ph="select * fro... ${$this-&gt;getName()}" />
-                <marker date="1489232506858" expanded="true" signature="492:506" ph="select * fro... ${$this-&gt;getName()}" />
-                <marker date="1489232506858" expanded="true" signature="747:796" ph="delete from " />
-                <marker date="1489232506858" expanded="true" signature="1290:1382" ph="INSERT INTO ${$this-&gt;getName()}... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="583">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -162,7 +127,6 @@
         <option value="$PROJECT_DIR$/View/Admin/list_of_usrs.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/View/Admin/list_of_usrs.phtml" />
-        <option value="$PROJECT_DIR$/View/Admin/products.phtml" />
         <option value="$PROJECT_DIR$/View/Admin/index.phtml" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/View/Admin/addinguser.phtml" />
@@ -174,17 +138,23 @@
         <option value="$PROJECT_DIR$/Model/User.php" />
         <option value="$PROJECT_DIR$/Model/Db/Table/User.php" />
         <option value="$PROJECT_DIR$/Controller/Order.php" />
-        <option value="$PROJECT_DIR$/Controller/Admin.php" />
         <option value="$PROJECT_DIR$/Model/Order.php" />
-        <option value="$PROJECT_DIR$/View/Admin/addingorderpage.phtml" />
-        <option value="$PROJECT_DIR$/View/Admin/editingorderpage.phtml" />
-        <option value="$PROJECT_DIR$/System/Controller.php" />
-        <option value="$PROJECT_DIR$/Model/Db/Table/Order.php" />
         <option value="$PROJECT_DIR$/View/Admin/orders.phtml" />
         <option value="$PROJECT_DIR$/View/Admin/editinguserpage.phtml" />
         <option value="$PROJECT_DIR$/View/Admin/addinguserpage.phtml" />
         <option value="$PROJECT_DIR$/View/Admin/users.phtml" />
+        <option value="$PROJECT_DIR$/Controller/Admin.php" />
+        <option value="$PROJECT_DIR$/System/Controller.php" />
         <option value="$PROJECT_DIR$/js/actionhelper.js" />
+        <option value="$PROJECT_DIR$/View/Admin/products.phtml" />
+        <option value="$PROJECT_DIR$/Controller/Product.php" />
+        <option value="$PROJECT_DIR$/Model/Db/Table/Order.php" />
+        <option value="$PROJECT_DIR$/Model/Product.php" />
+        <option value="$PROJECT_DIR$/View/Admin/addingorderpage.phtml" />
+        <option value="$PROJECT_DIR$/View/Admin/addingproductpage.phtml" />
+        <option value="$PROJECT_DIR$/View/Admin/editingorderpage.phtml" />
+        <option value="$PROJECT_DIR$/View/Admin/editingproductpage.phtml" />
+        <option value="$PROJECT_DIR$/Model/Db/Table/Product.php" />
       </list>
     </option>
   </component>
@@ -200,6 +170,9 @@
       <server host="127.0.0.1" id="f7f3ee29-7be6-4b4f-a1cd-f31c24c39cff" name="steinmann.com" />
       <server host="steinmann.com" id="c41c2397-91b1-4fef-9d98-5c66e5e4f7ff" name="steinmann.com (1)" />
     </servers>
+  </component>
+  <component name="PhpTemplates">
+    <option name="NEW_PHP_FILE_LAST_EXTENSION" value="phtml" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6">
     <include_path>
@@ -242,6 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -303,20 +277,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="System" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="steinmann.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="steinmann.com" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -353,41 +313,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="steinmann.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="steinmann.com" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="steinmann.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="steinmann.com" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -503,35 +434,55 @@
       <workItem from="1488979797293" duration="13855000" />
       <workItem from="1489058356153" duration="19880000" />
       <workItem from="1489147228803" duration="10297000" />
-      <workItem from="1489224547219" duration="9129000" />
+      <workItem from="1489224547219" duration="14415000" />
+      <workItem from="1489254427970" duration="4261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98536000" />
+    <option name="totallyTimeSpent" value="108083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19681275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978328" sideWeight="0.50278884" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3111455" sideWeight="0.49730977" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3978328" sideWeight="0.49721116" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978328" sideWeight="0.49721116" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978328" sideWeight="0.50278884" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3111455" sideWeight="0.49730977" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19681275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978328" sideWeight="0.49721116" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -567,50 +518,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/authorize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="60" selection-start-line="33" selection-start-column="16" selection-end-line="34" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Db/Table/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
-          <folding>
-            <marker date="1489077612389" expanded="true" signature="217:268" ph="select * fro... ${$this-&gt;getName()}" />
-            <marker date="1489077612389" expanded="true" signature="657:722" ph="INSERT INTO ${$this-&gt;getName()}... " />
-            <marker date="1489077612389" expanded="true" signature="1277:1331" ph="select * fro... ${$this-&gt;getName()}" />
-            <marker date="1489077612389" expanded="true" signature="1817:1831" ph="select * fro... ${$this-&gt;getName()}" />
-            <marker date="1489077612389" expanded="true" signature="2070:2119" ph="delete from " />
-            <marker date="1489077612389" expanded="true" signature="2809:2934" ph="INSERT INTO ${$this-&gt;getName()}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2898">
@@ -665,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/Admin/products.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -707,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,14 +628,6 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-689">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -757,30 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Db/Table/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="144" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="1" />
-          <folding>
-            <marker date="1489077612389" expanded="true" signature="217:268" ph="select * fro... ${$this-&gt;getName()}" />
-            <marker date="1489077612389" expanded="true" signature="657:722" ph="INSERT INTO ${$this-&gt;getName()}... " />
-            <marker date="1489077612389" expanded="true" signature="1277:1331" ph="select * fro... ${$this-&gt;getName()}" />
-            <marker date="1489077612389" expanded="true" signature="1817:1831" ph="select * fro... ${$this-&gt;getName()}" />
-            <marker date="1489077612389" expanded="true" signature="2070:2119" ph="delete from " />
-            <marker date="1489077612389" expanded="true" signature="2809:2934" ph="INSERT INTO ${$this-&gt;getName()}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Admin/addingorderpage.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,75 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/System/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1332">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Admin/editingorderpage.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Db/Table/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <marker date="1489232506858" expanded="true" signature="216:267" ph="select * fro... ${$this-&gt;getName()}" />
-            <marker date="1489232506858" expanded="true" signature="492:506" ph="select * fro... ${$this-&gt;getName()}" />
-            <marker date="1489232506858" expanded="true" signature="747:796" ph="delete from " />
-            <marker date="1489232506858" expanded="true" signature="1290:1382" ph="INSERT INTO ${$this-&gt;getName()}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Admin/orders.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1252">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/Admin/editinguserpage.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -917,27 +719,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/Admin/addinguserpage.phtml">
+    <entry file="file://$PROJECT_DIR$/System/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/actionhelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-739">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="298">
+          <caret line="124" column="6" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/Admin/users.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="378">
           <caret line="45" column="104" selection-start-line="45" selection-start-column="104" selection-end-line="45" selection-end-column="104" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Admin/addinguserpage.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Db/Table/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="128" column="38" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="38" />
+          <folding>
+            <marker date="1489077612389" expanded="true" signature="217:268" ph="select * fro... ${$this-&gt;getName()}" />
+            <marker date="1489077612389" expanded="true" signature="657:722" ph="INSERT INTO ${$this-&gt;getName()}... " />
+            <marker date="1489077612389" expanded="true" signature="1277:1331" ph="select * fro... ${$this-&gt;getName()}" />
+            <marker date="1489077612389" expanded="true" signature="1817:1831" ph="select * fro... ${$this-&gt;getName()}" />
+            <marker date="1489077612389" expanded="true" signature="2070:2119" ph="delete from " />
+            <marker date="1489077612389" expanded="true" signature="2809:2934" ph="INSERT INTO ${$this-&gt;getName()}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Admin/orders.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="29" column="7" selection-start-line="24" selection-start-column="4" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Admin/addingorderpage.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Admin/addingproductpage.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Admin/products.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/actionhelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Admin/editingorderpage.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Admin/editingproductpage.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1422">
+          <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="211" column="42" selection-start-line="211" selection-start-column="42" selection-end-line="211" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Db/Table/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding>
+            <marker date="1489257975606" expanded="true" signature="216:267" ph="select * fro... ${$this-&gt;getName()}" />
+            <marker date="1489257975606" expanded="true" signature="492:506" ph="select * fro... ${$this-&gt;getName()}" />
+            <marker date="1489257975606" expanded="true" signature="747:796" ph="delete from " />
+            <marker date="1489257975606" expanded="true" signature="1251:1338" ph="INSERT INTO ${$this-&gt;getName()}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Db/Table/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-721">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1489259866983" expanded="true" signature="221:273" ph="select * fro... ${$this-&gt;getName()}" />
+            <marker date="1489259866983" expanded="true" signature="501:515" ph="select * fro... ${$this-&gt;getName()}" />
+            <marker date="1489259866983" expanded="true" signature="759:809" ph="delete from " />
+            <marker date="1489259866983" expanded="true" signature="1320:1420" ph="INSERT INTO ${$this-&gt;getName()}... " />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -46,6 +46,30 @@ function editingOrder()
     return true;
 }
 
+function deletingProduct(product_sku)
+{
+    if (confirm("Are you sure?"))
+    {
+        window.location = '/admin/deleteproduct/' + product_sku;
+        window.location = '/admin/products';
+        return true;
+    }
+}
+
+function addingProduct()
+{
+    alert('Product is added!');
+    window.location='/admin/products';
+    return true;
+}
+
+function editingProduct()
+{
+    alert('Editing for this product is saving!');
+    window.location='/admin/products';
+    return true;
+}
+
 function searchSkills(str)
 {
     var skills = ['PHP', 'CSS', 'Javascript', 'Java', 'HTML', 'Web-design'];

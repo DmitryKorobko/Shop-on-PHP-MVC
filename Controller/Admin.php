@@ -43,7 +43,11 @@ class Controller_Admin extends System_Controller
 
     public function productsAction()
     {
-        if (!($this->isAdmin())) {
+        $product = Model_Product::getAllProducts();
+        if($this->isAdmin()) {
+            $this->view->setParam('product', $product);
+        }
+        else {
             header('location: /');
         }
     }
@@ -154,6 +158,60 @@ class Controller_Admin extends System_Controller
             $order = $order->editingOrder($params);
             header('location: /admin/orders/');
             return $order;
+        }
+        else {
+            header('location: /');
+        }
+    }
+
+    public function addingProductAction()
+    {
+        if($this->isAdmin()) {
+            $params = $_POST;
+            $product = new Model_Product;
+            $product = $product->addingProduct($params);
+            header('location: /admin/products/');
+            return $product;
+        }
+        else {
+            header('location: /');
+        }
+    }
+
+    public function addingProductPageAction()
+    {
+        if (!($this->isAdmin())) {
+            header('location: /');
+        }
+    }
+
+    public function deleteProductAction()
+    {
+        if($this->isAdmin()) {
+            $sku = $this->args[0];
+            $product = new Model_Product;
+            $product->deleteProduct($sku);
+        }
+        else {
+            header('location: /');
+        }
+    }
+
+    public function editingProductPageAction()
+    {
+        if (!($this->isAdmin())) {
+            header('location: /');
+        }
+    }
+
+    public function editingProductAction()
+    {
+        if($this->isAdmin()) {
+            $params = $_POST;
+            $product = new Model_Product;
+            $product = $product->editingProduct($params);
+            header('location: /admin/products/');
+            return $product;
         }
         else {
             header('location: /');

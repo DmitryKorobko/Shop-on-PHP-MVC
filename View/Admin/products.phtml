@@ -1,1 +1,42 @@
-<p><h1>Products</h1></p>
+<?php
+/**
+ * @var Model_Product $product
+ */
+$products = $view->getParam('product');
+
+?>
+
+<?php if($products) : ?>
+    <p><h1>Orders</h1></p>
+    <p><input type="submit" class="global_actions" name="add_product" value="Add product" onclick="javascript:window.location='/admin/addingproductpage';"/></p>
+
+    <table border="2px">
+        <th class="products product_sku">SKU</th>
+        <th class="products product_name">User Id</th>
+        <th class="products description">Date</th>
+        <th class="products img">Photo</th>
+        <th class="products price">Price</th>
+        <th class="products total">Total</th>
+
+        <th>Actions</th>
+
+        <?php foreach ($products as $product)
+        { ?>
+            <tr>
+                <td class="products product_sku"><?php echo $product->sku; ?></td>
+                <td class="products product_name"><?php echo $product->product_name; ?></td>
+                <td class="products description"><?php echo $product->description; ?></td>
+                <td class="products img"><?php echo $product->img; ?></td>
+                <td class="products price"><?php echo $product->price; ?></td>
+                <td class="products total"><?php echo $product->total; ?></td>
+
+                <td> <input type="submit" name="edit_product" value="Edit" onclick="javascript:window.location='/admin/editingproductpage/<?php echo $product->sku; ?>';"/>
+                    <input type="submit" name="delete_product" value="Delete" onclick="javascript: deletingProduct(<?php echo $product->sku; ?>);"/>
+                </td>
+            </tr>
+        <?php } ?>
+    </table>
+
+<?php  elseif($view->getParam('error')) : ?>
+    <div class="error"><?php echo $view->getParam('error')?></div>
+<?php endif; ?>

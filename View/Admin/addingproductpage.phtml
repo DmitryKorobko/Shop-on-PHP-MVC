@@ -1,0 +1,18 @@
+<p><h1>Adding new product</h1></p>
+
+<form name="main" action="/admin/addingproduct/" method="post">
+    SKU:<br>
+    <input name="sku" type="text" size="15" maxlength="30"/><br>
+    Name:<br>
+    <input name="product_name" type="text" size="15" maxlength="30"/><br>
+    Description:<br>
+    <input name="description" type="text" size="15" maxlength="60"/><br>
+    Photo:<br>
+    <input name="img" type="text" size="15" maxlength="30"/><br>
+    Price:<br>
+    <input name="price" type="text" size="15" maxlength="30"/><br>
+    Total:<br>
+    <input name="total" type="text" size="15" maxlength="30"/><br>
+
+    <p><input type="submit" class="global_actions" value="Add product" onclick="addingProduct();"/></p>
+</form>

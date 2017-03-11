@@ -42,13 +42,14 @@ class Model_Db_Table_Order extends System_Db_Table
      */
     public function addingOrder($params)
     {
-        $id      = trim($params['id']);
         $order_user_id   = trim($params['order_user_id']);
         $order_date = trim($params['order_date']);
         $order_sum  = trim($params['order_sum']);
-        $sql = 'INSERT INTO ' . $this->getName() . ' (id,order_user_id,order_date,order_sum) VALUES(?,?,?,?)';
+
+        $sql = 'INSERT INTO ' . $this->getName() . ' (order_user_id,order_date,order_sum) VALUES(?,?,?)';
         $sth = $this->getConnection()->prepare($sql);
-        $result = $sth->execute([$id,$order_user_id,$order_date,$order_sum]);
+
+        $result = $sth->execute([$order_user_id,$order_date,$order_sum]);
         if($result) {
             return $this->getConnection()->lastInsertId();
         }
@@ -60,19 +61,18 @@ class Model_Db_Table_Order extends System_Db_Table
      */
     public function editingOrder($params)
     {
-        $id      = trim($params['id']);
+        $order_id      = trim($params['order_id']);
         $order_user_id   = trim($params['order_user_id']);
         $order_date = trim($params['order_date']);
         $order_sum  = trim($params['order_sum']);
 
-        $sql = 'UPDATE ' . $this->getName() . ' SET 
-                `order_id` =:id, 
+        $sql = 'UPDATE ' . $this->getName() . ' SET                 
                 `order_user_id` =:order_user_id, 
                 `order_date` =:order_date, 
                 `order_sum` =:order_sum 
                  WHERE `id`=:order_id';
         $sth = $this->getConnection()->prepare($sql);
-        $sth->bindValue(":id",$id);
+        $sth->bindValue(":order_id",$order_id);
         $sth->bindValue(":order_user_id",$order_user_id);
         $sth->bindValue(":order_date",$order_date);
         $sth->bindValue(":order_sum",$order_sum);

@@ -1,0 +1,30 @@
+<?php
+$productSku = array_pop(explode('/', $_GET['route']));
+
+if($productSku) {
+    $productModel   = Model_Product::getBySku($productSku);
+    $productSku     = $productModel->sku;
+    $productName    = $productModel->product_name;
+    $productDescription = $productModel->description;
+    $productImg     = $productModel->img;
+    $productPrice   = $productModel->price;
+    $productTotal   = $productModel->total;
+}
+?>
+<p><h1>Edit this product</h1></p>
+<form name="main" action="/admin/editingproduct/" method="post">
+    SKU:<br>
+    <input type="text" name="sku" size="15" maxlength="30" value="<?php echo $productSku; ?>"><br>
+    Name:<br>
+    <input type="text" name="product_name" size="15" maxlength="20" value="<?php echo $productName; ?>"><br>
+    Description:<br>
+    <input type="text" name="description" size="15" maxlength="20" value="<?php echo $productDescription; ?>"><br>
+    IMG:<br>
+    <input type="text" name="img" size="15" maxlength="20" value="<?php echo $productImg; ?>"><br>
+    Price:<br>
+    <input type="text" name="price" size="15" maxlength="20" value="<?php echo $productPrice; ?>"><br>
+    Total:<br>
+    <input type="text" name="total" size="15" maxlength="20" value="<?php echo $productTotal; ?>"><br>
+
+    <p><input type="submit" class="global_actions" value="Save editing" onclick="editingProduct();"/></p>
+</form>
