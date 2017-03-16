@@ -9,39 +9,67 @@ $users = $view->getParam('user');
 <?php if($users) : ?>
     <p><h1>Users</h1></p>
     <p>
-<!--       <form name="users_header" method="post">-->
-<!--       <input type="submit" class="global_actions" name="button_settings" value="View settings" onclick="viewElements('--> <?php  //echo 'users'; ?><!--,--><?php  //echo implode(",", $_POST['view_settings']); ?><!--')"/><br>-->
-<!--       <input type="checkbox" name="view_settings[]" value="user_id"> ID </input>-->
-<!--       <input type="checkbox" name="view_settings[]" value="email" checked> Email </input>-->
-<!--       <input type="checkbox" name="view_settings[]" value="first_name" checked> First name </input>-->
-<!--       <input type="checkbox" name="view_settings[]" value="last_name" checked> Last name </input>-->
-<!--       <input type="checkbox" name="view_settings[]" value="birth" checked> Year of Birth </input>-->
-<!--       <input type="checkbox" name="view_settings[]" value="role_id" checked> Role ID </input>-->
-<!--       <input type="checkbox" name="view_settings[]" value="skills" checked> Skills </input>-->
-<!--       </form>-->
+       <form name="users_header" method="post">
+       <input type="submit" class="global_actions" name="button_settings" value="View settings" onclick="//viewElements(event, ' <?php  //echo 'users'; ?>,<?php  //echo implode(",", $_POST['view_settings']); ?>')"/><br>
+       <input type="checkbox" name="view_settings[user_id]" value="user_id" <?php echo (!empty($_POST['view_settings']['user_id']) ? 'checked' : '' ); ?> > ID </input>
+       <input type="checkbox" name="view_settings[email]" value="email" <?php echo (!empty($_POST['view_settings']['email']) ? 'checked' : '' ); ?>> Email </input>
+       <input type="checkbox" name="view_settings[first_name]" value="first_name" <?php echo (!empty($_POST['view_settings']['first_name']) ? 'checked' : '' ); ?>> First name </input>
+       <input type="checkbox" name="view_settings[last_name]" value="last_name" <?php echo (!empty($_POST['view_settings']['last_name']) ? 'checked' : '' ); ?>> Last name </input>
+       <input type="checkbox" name="view_settings[birth]" value="birth" <?php echo (!empty($_POST['view_settings']['birth']) ? 'checked' : '' ); ?>> Year of Birth </input>
+       <input type="checkbox" name="view_settings[role_id]" value="role_id" <?php echo (!empty($_POST['view_settings']['role_id']) ? 'checked' : '' ); ?>> Role ID </input>
+       <input type="checkbox" name="view_settings[skills]" value="skills" <?php echo (!empty($_POST['view_settings']['skills']) ? 'checked' : '' ); ?>> Skills </input>
+       </form>
        <input type="submit" class="global_actions" name="add_user" value="Add new user" onclick="javascript:window.location='/admin/addinguserpage';"/>
     </p>
 
     <table border="2px">
-        <th class="users user_id">Id</th>
-        <th class="users first_name">First name</th>
-        <th class="users last_name">Last name</th>
-        <th class="users birth">Year of Birth</th>
-        <th class="users email">Email</th>
-        <th class="users role_id">Role ID</th>
-        <th class="users skills">Skills</th>
+        <?php if(!empty($_POST['view_settings']['user_id'])): ?>
+            <th class="users user_id">Id</th>
+        <?php endif;?>
+        <?php if(!empty($_POST['view_settings']['first_name'])): ?>  
+            <th class="users first_name">First name</th>
+        <?php endif;?>
+        <?php if(!empty($_POST['view_settings']['last_name'])): ?>        
+            <th class="users last_name">Last name</th>
+        <?php endif;?>
+        <?php if(!empty($_POST['view_settings']['birth'])): ?>
+            <th class="users birth">Year of Birth</th>
+        <?php endif;?>
+        <?php if(!empty($_POST['view_settings']['email'])): ?>    
+            <th class="users email">Email</th>
+        <?php endif;?>
+        <?php if(!empty($_POST['view_settings']['role_id'])): ?>    
+            <th class="users role_id">Role ID</th>
+        <?php endif;?>
+        <?php if(!empty($_POST['view_settings']['skills'])): ?>    
+            <th class="users skills">Skills</th>
+        <?php endif;?>
         <th>Actions</th>
 
         <?php foreach ($users as $user)
         { ?>
             <tr>
-                <td class="users user_id"><?php echo $user->id; ?></td>
-                <td class="users first_name"><?php echo $user->first_name; ?></td>
-                <td class="users last_name"><?php echo $user->last_name; ?></td>
-                <td class="users birth"><?php echo $user->birth; ?></td>
-                <td class="users email"><?php echo $user->email; ?></td>
-                <td class="users role_id"><?php echo $user->role_id; ?></td>
-                <td class="users skills"><?php echo $user->skills; ?></td>
+                <?php if(!empty($_POST['view_settings']['user_id'])): ?>
+                    <td class="users user_id"><?php echo $user->id; ?></td>
+                <?php endif;?>
+                <?php if(!empty($_POST['view_settings']['first_name'])): ?>    
+                    <td class="users first_name"><?php echo $user->first_name; ?></td>
+                <?php endif;?>
+                <?php if(!empty($_POST['view_settings']['last_name'])): ?>    
+                    <td class="users last_name"><?php echo $user->last_name; ?></td>
+                <?php endif;?>
+                <?php if(!empty($_POST['view_settings']['birth'])): ?>
+                    <td class="users birth"><?php echo $user->birth; ?></td>
+                <?php endif;?>
+                <?php if(!empty($_POST['view_settings']['email'])): ?> 
+                    <td class="users email"><?php echo $user->email; ?></td>
+                <?php endif;?>
+                <?php if(!empty($_POST['view_settings']['role_id'])): ?>     
+                    <td class="users role_id"><?php echo $user->role_id; ?></td>
+                <?php endif;?>
+                <?php if(!empty($_POST['view_settings']['skills'])): ?> 
+                    <td class="users skills"><?php echo $user->skills; ?></td>
+                <?php endif;?>
                 <td> <input type="submit" name="edit_user" value="Edit" onclick="javascript:window.location='/admin/editinguserpage/<?php echo $user->id; ?>';"/>
                      <input type="submit" name="delete" value="Delete" onclick="javascript: deletingUser(<?php echo $user->id; ?>);"/>
                 </td>

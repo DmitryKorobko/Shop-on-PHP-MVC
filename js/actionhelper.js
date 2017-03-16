@@ -89,9 +89,9 @@ function searchRoleId(role)
     $("select option[value=" + role + "]").prop("selected", true);
 }
 
-// function viewElements(class, element)
+// function viewElements(clss, element)
 // {
-//      $('.' + class).attr('hidden',true);
+//      $('.' + clss).attr('hidden',true);
 //     var elements = element.split(',');
 //     elements.forEach(function(item) {
 //         $('.' + item).prop('hidden',false);
